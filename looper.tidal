@@ -1,0 +1,8 @@
+-- recording
+d1 $ loopAt 1 $ s "rec" + n "0"
+
+-- playback 
+d2 $ loopAt 1 $ slice 8 "0 5 4 2 0 0 0 0" $ s "rec0"
+# gain 1.2
+
+d1 silence
